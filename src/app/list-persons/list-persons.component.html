@@ -1,0 +1,23 @@
+<div class="list">
+    <div>
+        List of registered people
+    </div>
+    <ul>
+        @for (item of listPersons; track $index) {
+            <li > 
+                <span>
+                    {{item.fullName}}
+                </span>
+                <span>
+                    {{item.jobName}}
+                </span>
+    
+            </li>
+
+        } @empty {
+            <li>
+                Aucun élément trouvé
+            </li>
+        }
+    </ul>
+</div>
